@@ -61,6 +61,15 @@ h2 { font-size: 24px; margin: 0 0 12px; }
 :root[data-theme="dark"] .brand .logo-chiaro { display: none; }
 :root[data-theme="dark"] .brand .logo-scuro { display: block; }
 .brand span { color: var(--muted); font-weight: 500; }
+.indietro {
+  display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
+  color: var(--accent); font-size: 16px; font-weight: 500; padding: 6px 8px 6px 2px; margin-right: 6px;
+}
+.indietro:hover { text-decoration: none; opacity: 0.75; }
+.con-indietro .brand { margin-right: auto; }
+@media (max-width: 520px) {
+  .con-indietro .brand span { display: none; }
+}
 .tema {
   border: 0; background: var(--card); color: var(--text); box-shadow: var(--shadow);
   width: 36px; height: 36px; border-radius: 50%; font-size: 17px; cursor: pointer;
